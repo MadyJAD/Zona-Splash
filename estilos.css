@@ -1,0 +1,284 @@
+body {
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+    background-color: #025377; /
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    overflow-y: auto;  
+}
+
+header {
+    text-align: center;
+    padding: 4px;
+    background-color: #b2c0cb;
+   
+}
+/*navegacion*/
+a {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.nav-main {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-main ul{
+    display: flex;
+   
+}
+.nav-main ul li {
+      padding: 10px;
+}
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.about-us {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin-bottom: 20px;
+}
+
+.content img {
+    width: 100%;
+    max-width: 500px; 
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+.content p {
+    width: 100%;
+    max-width: 500px; 
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 20px; 
+}
+
+@media (min-width: 768px) {
+    .content img, .content p {
+        width: 48%; 
+    }
+}
+
+.section-title {
+    margin: 40px 0;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-title p,
+.section-title ul {
+    font-size: 1.1rem;
+}
+
+.section-title ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section-title ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid #fff;
+    margin: 20px 0;
+}
+
+.hero-section {
+    text-align: center;
+    background-color: #6da3c7;
+    padding: 50px 20px;
+}
+
+.hero-section h1 {
+    color: #025377;
+}
+
+.hero-section p {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Grid de Atracciones */
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 10px;
+    padding: 20px;
+}
+
+.attraction-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.attraction-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.attraction-item h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    font-size: 24px;
+}
+
+.attraction-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #025377;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.attraction-description h2 {
+    margin-bottom: 10px;
+}
+
+.attraction-description p {
+    font-size: 16px;
+}
+
+/*footer*/
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .links a {
+    margin: 0 30px;
+  }
+  
+  .links a i {
+    font-size: 3rem;
+  }
+  
+  /* Links */
+  .footer-links {
+    background: #b2c0cb;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .footer-container ul {
+    margin: 0 auto;
+  }
+  
+  .footer-links li {
+    line-height: 2.8;
+  }
+  
+  .footer {
+    background: #b2c0cb;
+    color: #616161;
+    font-size: 10px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+
+  /* Sección de Contacto */
+.contact-section {
+    background-image: url('https://img.freepik.com/fotos-premium/vibrante-tobogan-acuatico-complejo-turistico_922936-29035.jpg?uid=R162087426&ga=GA1.1.1593382069.1725581475&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-container h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"] {
+    width: 100%;
+}
+
+button {
+    background-color: #1c74bc;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7d817f;
+}
